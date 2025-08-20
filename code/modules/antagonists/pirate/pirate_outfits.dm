@@ -192,3 +192,31 @@
 
 
 	skillchips = list(/obj/item/skillchip/big_pointer) //they don't have an id, so this is needed
+
+/datum/outfit/pirate/mothic
+	name = "Mothic Nomad Outfit"
+	id = /obj/item/card/id/advanced
+	id_trim = /datum/id_trim/pirate/nomad
+	uniform = /obj/item/clothing/under/syndicate/rus_army
+	suit = /obj/item/clothing/suit/armor/vest/russian
+	back = /obj/item/storage/backpack/satchel/leather
+	glasses = null
+	gloves = /obj/item/clothing/gloves/combat
+	head = /obj/item/clothing/head/helmet/rus_helmet
+	shoes = /obj/item/clothing/shoes/pirate
+	ears = /obj/item/radio/headset/syndicate
+    mask = /obj/item/clothing/mask/russian/balaclava
+
+datum/outfit/pirate/mothic/captain
+	name = "Nomad Captain Outfit"
+	id = /obj/item/card/id/advanced
+	id_trim = /datum/id_trim/pirate/captain/nomad
+	uniform = /obj/item/clothing/under/syndicate/rus_army
+	suit = /obj/item/clothing/suit/armor/vest/russian_coat
+	back = /obj/item/storage/backpack/satchel/leather
+	glasses = null
+	gloves = /obj/item/clothing/gloves/combat
+	head = /obj/item/clothing/head/costume/rus_ushanka
+	shoes = /obj/item/clothing/shoes/pirate
+	ears = /obj/item/radio/headset/syndicate
+        mask = /obj/item/clothing/mask/russian_balaclava
