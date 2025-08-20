@@ -221,3 +221,35 @@
 	. = ..()
 	spawned_mob.dna.add_mutation(/datum/mutation/hulk/superhuman, MUTATION_SOURCE_GHOST_ROLE)
 	spawned_mob.dna.add_mutation(/datum/mutation/gigantism, MUTATION_SOURCE_GHOST_ROLE)
+
+/obj/effect/mob_spawn/ghost_role/human/pirate/mothic
+	name = "mothic sleeper"
+	desc = "An uncomfortable sleeper, there seems to be a moth nomad inside whos looking to raze stations."
+        you_are_text = "You are a part of the Grand Nomad Fleet that makes of living by raiding stations."
+	flavour_text = "The station has refused to pay tribute to the Grand Fleet, make them regret their decision."
+	icon = 'icons/obj/machines/sleeper.dmi'
+	icon_state = "sleeper"
+	prompt_name = "A militant of the Grand Nomad Fleet"
+	mob_species = /datum/species/moth
+	outfit = /datum/outfit/pirate/mothic
+	rank = "Nomad"
+
+/obj/effect/mob_spawn/ghost_role/human/pirate/mothic/generate_pirate_name(spawn_gender)
+	var/first_name
+	switch(spawn_gender)
+		if(MALE)
+			first_name = pick(GLOB.moth_names_male)
+		if(FEMALE)
+			first_name = pick(GLOB.moth_names_female)
+		else
+			first_name = pick(GLOB.moth_names_male + GLOB.moth_names_female)
+
+	return "[rank] [first_name]"
+
+/obj/effect/mob_spawn/ghost_role/human/pirate/mothic/captain
+	rank = "Grand Admiral"
+	outfit = /datum/outfit/pirate/mothic/captain
+
+/obj/effect/mob_spawn/ghost_role/human/pirate/mothic/nomad
+	rank = "Nomad"
+
