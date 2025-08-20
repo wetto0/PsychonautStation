@@ -227,3 +227,20 @@ GLOBAL_LIST_INIT(heavy_pirate_gangs, init_pirate_gangs(is_heavy = TRUE))
 	response_rejected = "FOOLISH DECISION, I'LL MAKE AN EXAMPLE OUT OF YOUR CARCASS!! (does anyone remember how to pilot our ship?)"
 	response_too_late = "YOU ARE ALREADY UNDER SIEGE YOU BUFFON, ARE YOU BRAINSICK OR IGNORANT?!!"
 	response_not_enough = "DO THINK OF ME AS A JESTER? YOU ARE DEAD MEAT!! (i forgot how to fly the ship, tarnation.)"
+
+/datum/pirate_gang/mothic
+	name = "Grand Nomad Fleet"
+        
+        is_heavy_threat = TRUE
+	ship_template_id = "mothic"
+	ship_name_pool = "nomad_names"
+
+	threat_title = "Tribute request"
+	threat_content = "This is the %SHIPNAME. The Grand Nomad Fleet commands that you must pay your monthly tribute for the fleet. %PAYOFF credits should be enough."
+	arrival_announcement = "The Grand Fleet has concluded that this station must be pillaged for the benefits of the mothic people."
+	possible_answers = list("We'll pay.","Tribute? Really? Go away.")
+
+	response_received = "Olması gerektiği gibi, moth halkı ödediğiniz haraç için müteşekkir."
+	response_rejected = "Yüce Filo bu kararınız karşısında harekete geçip istasyonunuzu yağmalamaya karar vermiştir, bunun sorumlusu sizlersiniz."
+	response_too_late = "Haracınızın ödemek için geç kaldınız. Şu andan itibaren istasyonunuz için sadece ölüm ve yıkım var."
+	response_not_enough = "Yüce Filo haracınızın miktarını yeterli bulmuyor. Moth Hordası daha fazlasını teslim almak için yola çıktı. "
