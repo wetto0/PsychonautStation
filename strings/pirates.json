@@ -252,5 +252,16 @@
 		"Dark Ages Bringer",
 		"Merciless Barricade",
 		"Murder Mcmurderface"
-	]
+	],
+        "mothic_names": [
+		"Grand Nomad Fleet",
+		"Nomad Legionaries",
+		"Sixth Fighter",
+		"Great Horde",
+		"Winged Marauders",
+		"Admiral's Finest",
+		"Mothic Resistance",
+         "Winged Scavengers",
+     ],
+		
 }
